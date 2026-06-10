@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Collectra — Personal Collection Manager for Mac</title>
-  <meta name="description" content="The macOS app for collectors. Catalogue vinyl, cameras, books, hi-fi and more — stored entirely on your Mac."/>
+  <title>Collectra — Personal Collection Manager for Mac & Windows</title>
+  <meta name="description" content="The macOS & Windows app for collectors. Catalogue vinyl, cameras, books, hi-fi and more — stored entirely on your device."/>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{--gold:#C89B3C;--gold-light:#FDF6E3;--dark:#1a1a1a;--text:#1a1a1a;--muted:#666;--border:#e0e0e0}
@@ -32,6 +32,13 @@
     .btn-outline-hero{display:inline-block;border:1.5px solid rgba(255,255,255,.45);color:#fff;font-size:.9rem;padding:13px 26px;border-radius:50px;margin-left:10px;transition:background .15s}
     .btn-outline-hero:hover{background:rgba(255,255,255,.08);text-decoration:none}
     .hero-price{margin-top:26px;font-size:.84rem;opacity:.52}
+    .hero-dl{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:20px}
+    .hero-dl-label{width:100%;font-size:.78rem;opacity:.45;margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px}
+    .btn-dl{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.8);font-size:.8rem;padding:7px 16px;border-radius:50px;transition:background .15s,border-color .15s}
+    .btn-dl:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.55);text-decoration:none;color:#fff}
+    .btn-dl svg{opacity:.7}
+    .btn-gold-pricing{display:inline-block;background:var(--gold);color:#fff;font-weight:700;font-size:.95rem;padding:13px 36px;border-radius:50px;margin-top:28px;transition:transform .15s,box-shadow .15s}
+    .btn-gold-pricing:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,155,60,.45);text-decoration:none}
     .screenshot-hero{background:var(--dark);padding:0 40px 60px;text-align:center}
     .screenshot-hero img{max-width:880px;width:100%;border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.65);border:1px solid rgba(255,255,255,.07)}
     .section{padding:76px 24px;max-width:1000px;margin:0 auto}
@@ -108,12 +115,27 @@
 
 <section class="hero">
   <img class="hero-icon" src="icon.png" alt="Collectra App Icon"/>
-  <div class="hero-badge" data-i18n="hero.badge">macOS App</div>
+  <div class="hero-badge" data-i18n="hero.badge">macOS &amp; Windows</div>
   <h1><span data-i18n="hero.title1">Every item,</span><br><span data-i18n="hero.title2" style="color:var(--gold)">perfectly catalogued.</span></h1>
-  <p data-i18n="hero.subtitle">The dedicated collection manager for vinyl, cameras, books, hi-fi, and more — beautifully organised and stored entirely on your Mac.</p>
-  <a href="#" class="btn-gold-hero" data-i18n="hero.cta">Download on the Mac App Store</a>
+  <p data-i18n="hero.subtitle">The dedicated collection manager for vinyl, cameras, books, hi-fi, and more — beautifully organised and stored entirely on your Mac or PC.</p>
+  <a href="https://lfhouse.lemonsqueezy.com/checkout/buy/749d208a-0ea6-4f4b-afbe-449b921793c2" class="btn-gold-hero" data-i18n="hero.cta">Buy Now · $29.99</a>
   <a href="#features" class="btn-outline-hero" data-i18n="hero.learn">Learn more</a>
   <p class="hero-price" data-i18n="hero.price">$29.99 · One-time purchase · No subscription</p>
+  <div class="hero-dl">
+    <div class="hero-dl-label" data-i18n="hero.dl_label">Download</div>
+    <a href="https://github.com/simonlee0506/collectra-site/releases/download/v0.1.0/Collectra-0.1.0-arm64.dmg" class="btn-dl">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      macOS Apple Silicon
+    </a>
+    <a href="https://github.com/simonlee0506/collectra-site/releases/download/v0.1.0/Collectra-0.1.0.dmg" class="btn-dl">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      macOS Intel
+    </a>
+    <a href="https://github.com/simonlee0506/collectra-site/releases/download/v0.1.0/Collectra.Setup.0.1.0.exe" class="btn-dl">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-13.051-1.8"/></svg>
+      Windows x64
+    </a>
+  </div>
 </section>
 
 <div class="screenshot-hero">
@@ -168,8 +190,9 @@
   <div class="pricing-card-single">
     <div class="plan-label" data-i18n="price.plan">One-time purchase</div>
     <div class="price-big">$29.99</div>
-    <div class="price-sub-text" data-i18n="price.period">macOS · All future updates included</div>
-    <p class="price-req" data-i18n="price.req">macOS 12 Monterey or later · Apple Silicon & Intel</p>
+    <div class="price-sub-text" data-i18n="price.period">macOS &amp; Windows · All future updates included</div>
+    <p class="price-req" data-i18n="price.req">macOS 12+ · Windows 10+ · Apple Silicon, Intel &amp; x64</p>
+    <a href="https://lfhouse.lemonsqueezy.com/checkout/buy/749d208a-0ea6-4f4b-afbe-449b921793c2" class="btn-gold-pricing" data-i18n="price.cta">Buy Now</a>
   </div>
 </section>
 
@@ -193,17 +216,18 @@
 const T={
   en:{
     "nav.features":"Features","nav.screenshots":"Screenshots","nav.pricing":"Pricing","nav.privacy":"Privacy",
-    "hero.badge":"macOS App","hero.title1":"Every item,","hero.title2":"perfectly catalogued.",
-    "hero.subtitle":"The dedicated collection manager for vinyl, cameras, books, hi-fi, and more \u2014 beautifully organised and stored entirely on your Mac.",
-    "hero.cta":"Download on the Mac App Store","hero.learn":"Learn more",
+    "hero.badge":"macOS & Windows","hero.title1":"Every item,","hero.title2":"perfectly catalogued.",
+    "hero.subtitle":"The dedicated collection manager for vinyl, cameras, books, hi-fi, and more \u2014 beautifully organised and stored entirely on your Mac or PC.",
+    "hero.cta":"Buy Now \u00b7 $29.99","hero.learn":"Learn more",
     "hero.price":"$29.99 \u00b7 One-time purchase \u00b7 No subscription",
+    "hero.dl_label":"Download",
     "features.title":"Built for serious collectors","features.sub":"Every detail of your collection, captured and searchable.",
     "f1.title":"Seven Dedicated Categories","f1.body":"Cameras, audio gear, vinyl, CDs, cassettes, books, and computers \u2014 each with its own tailored fields. No more cramming into a generic spreadsheet.",
     "f2.title":"Statistics Dashboard","f2.body":"Total value, category breakdown, 365-day acquisition heatmap, condition distribution, and your Top 10 by estimated value.",
     "f3.title":"Powerful Import","f3.body":"Bulk import from Excel, CSV, or JSON. Barcode batch scan via Mac camera or iPhone Continuity Camera. Direct Discogs vinyl import.",
     "f4.title":"Flexible Export","f4.body":"Export to Excel, CSV, or JSON. Print in three layouts \u2014 table, card, or label \u2014 or generate a PDF for archiving.",
     "f5.title":"Instant Search & Filter","f5.body":"Full-text search with \u2318K. Advanced filters: condition, price range, purchase source, and loan status.",
-    "f6.title":"100% Local Storage","f6.body":"All data and photos stay on your Mac. No cloud account, no subscriptions, no network requests during normal use.",
+    "f6.title":"100% Local Storage","f6.body":"All data and photos stay on your Mac or PC. No cloud account, no subscriptions, no network requests during normal use.",
     "ss.title":"See it in action","ss.sub":"A powerful app that stays out of your way.",
     "ss.cap1":"7 dedicated collection categories","ss.cap2":"Statistics dashboard \u2014 value, trends & breakdown",
     "ss.cap3":"Import from Excel, CSV, JSON, or barcode scan","ss.cap4":"Export in any format, choose your fields","ss.cap5":"Print or share as PDF \u2014 three layouts",
@@ -217,8 +241,9 @@ const T={
     "cat.r6":"\ud83d\udcda Books","cat.r6f":"Author \u00b7 Publisher \u00b7 ISBN \u00b7 Binding style \u00b7 Read status",
     "cat.r7":"\ud83d\udcbb Computers","cat.r7f":"Machine type \u00b7 CPU \u00b7 RAM \u00b7 Storage \u00b7 GPU",
     "price.title":"One price. Forever yours.","price.sub":"No subscription. No recurring fees. Pay once and own it.",
-    "price.plan":"One-time purchase","price.period":"macOS \u00b7 All future updates included",
-    "price.req":"macOS 12 Monterey or later \u00b7 Apple Silicon & Intel",
+    "price.plan":"One-time purchase","price.period":"macOS & Windows \u00b7 All future updates included",
+    "price.req":"macOS 12+ \u00b7 Windows 10+ \u00b7 Apple Silicon, Intel & x64",
+    "price.cta":"Buy Now",
     "promo.title":"Take it to the field with Fetchera",
     "promo.body":"Collectra\u2019s iOS companion. Scan barcodes at flea markets and thrift stores, check real-time market prices, and instantly see if you already own it \u2014 then log it in Collectra when you get home.",
     "promo.cta":"Discover Fetchera \u2192",
@@ -226,17 +251,18 @@ const T={
   },
   fr:{
     "nav.features":"Fonctionnalit\u00e9s","nav.screenshots":"Captures","nav.pricing":"Tarifs","nav.privacy":"Confidentialit\u00e9",
-    "hero.badge":"Application macOS","hero.title1":"Chaque article,","hero.title2":"parfaitement catalog\u00e9.",
-    "hero.subtitle":"Le gestionnaire de collection d\u00e9di\u00e9 aux vinyles, appareils photo, livres, hi-fi et plus \u2014 \u00e9l\u00e9gamment organis\u00e9, enti\u00e8rement sur votre Mac.",
-    "hero.cta":"T\u00e9l\u00e9charger sur le Mac App Store","hero.learn":"En savoir plus",
+    "hero.badge":"macOS & Windows","hero.title1":"Chaque article,","hero.title2":"parfaitement catalog\u00e9.",
+    "hero.subtitle":"Le gestionnaire de collection d\u00e9di\u00e9 aux vinyles, appareils photo, livres, hi-fi et plus \u2014 \u00e9l\u00e9gamment organis\u00e9, enti\u00e8rement sur votre Mac ou PC.",
+    "hero.cta":"Acheter \u00b7 29,99\u00a0$","hero.learn":"En savoir plus",
     "hero.price":"29,99\u00a0$ \u00b7 Achat unique \u00b7 Sans abonnement",
+    "hero.dl_label":"T\u00e9l\u00e9charger",
     "features.title":"Con\u00e7u pour les collectionneurs s\u00e9rieux","features.sub":"Chaque d\u00e9tail de votre collection, captur\u00e9 et consultable.",
     "f1.title":"Sept cat\u00e9gories d\u00e9di\u00e9es","f1.body":"Appareils photo, hi-fi, vinyles, CD, cassettes, livres et ordinateurs \u2014 chacun avec ses propres champs sp\u00e9cialis\u00e9s.",
     "f2.title":"Tableau de bord statistiques","f2.body":"Valeur totale, r\u00e9partition par cat\u00e9gorie, carte de chaleur sur 365 jours, distribution des \u00e9tats et Top 10 par valeur.",
     "f3.title":"Import puissant","f3.body":"Import en masse Excel, CSV ou JSON. Scan de codes-barres par lot. Import direct depuis Discogs.",
     "f4.title":"Export flexible","f4.body":"Exportez en Excel, CSV ou JSON. Imprimez en tableau, cartes ou \u00e9tiquettes, ou g\u00e9n\u00e9rez un PDF.",
     "f5.title":"Recherche & filtres instantan\u00e9s","f5.body":"Recherche plein texte avec \u2318K. Filtres avanc\u00e9s : \u00e9tat, prix, source, statut de pr\u00eat.",
-    "f6.title":"Stockage 100\u00a0% local","f6.body":"Toutes les donn\u00e9es et photos restent sur votre Mac. Aucun compte cloud, aucun abonnement, aucune requ\u00eate r\u00e9seau.",
+    "f6.title":"Stockage 100\u00a0% local","f6.body":"Toutes les donn\u00e9es et photos restent sur votre Mac ou PC. Aucun compte cloud, aucun abonnement, aucune requ\u00eate r\u00e9seau.",
     "ss.title":"D\u00e9couvrez l\u2019interface","ss.sub":"Une app puissante qui se fait discr\u00e8te.",
     "ss.cap1":"7 cat\u00e9gories de collection d\u00e9di\u00e9es","ss.cap2":"Tableau de bord \u2014 valeur, tendances et r\u00e9partition",
     "ss.cap3":"Import depuis Excel, CSV, JSON ou scan de codes-barres","ss.cap4":"Export dans n\u2019importe quel format, choisissez vos champs","ss.cap5":"Imprimez ou partagez en PDF \u2014 trois mises en page",
@@ -250,8 +276,9 @@ const T={
     "cat.r6":"\ud83d\udcda Livres","cat.r6f":"Auteur \u00b7 \u00c9diteur \u00b7 ISBN \u00b7 Reliure \u00b7 Statut de lecture",
     "cat.r7":"\ud83d\udcbb Ordinateurs","cat.r7f":"Type de machine \u00b7 CPU \u00b7 RAM \u00b7 Stockage \u00b7 GPU",
     "price.title":"Un prix. Pour toujours.","price.sub":"Sans abonnement. Sans frais r\u00e9currents. Payez une fois, c\u2019est \u00e0 vous.",
-    "price.plan":"Achat unique","price.period":"macOS \u00b7 Toutes les futures mises \u00e0 jour incluses",
-    "price.req":"macOS 12 Monterey ou version ult\u00e9rieure \u00b7 Apple Silicon & Intel",
+    "price.plan":"Achat unique","price.period":"macOS & Windows \u00b7 Toutes les futures mises \u00e0 jour incluses",
+    "price.req":"macOS 12+ \u00b7 Windows 10+ \u00b7 Apple Silicon, Intel & x64",
+    "price.cta":"Acheter maintenant",
     "promo.title":"Emportez-le sur le terrain avec Fetchera",
     "promo.body":"Le compagnon iOS de Collectra. Scannez des codes-barres dans les march\u00e9s aux puces, consultez les prix en temps r\u00e9el et v\u00e9rifiez si vous le poss\u00e9dez d\u00e9j\u00e0 \u2014 puis enregistrez-le dans Collectra en rentrant chez vous.",
     "promo.cta":"D\u00e9couvrir Fetchera \u2192",
@@ -259,10 +286,11 @@ const T={
   },
   zh:{
     "nav.features":"\u529f\u80fd","nav.screenshots":"\u622a\u56fe","nav.pricing":"\u4ef7\u683c","nav.privacy":"\u9690\u79c1\u653f\u7b56",
-    "hero.badge":"macOS \u5e94\u7528","hero.title1":"\u6bcf\u4e00\u4ef6\u85cf\u54c1\uff0c","hero.title2":"\u5b8c\u7f8e\u5f52\u6863\u3002",
-    "hero.subtitle":"\u4e13\u4e3a\u9ed1\u80f6\u3001\u76f8\u673a\u3001\u4e66\u7c4d\u3001Hi-Fi \u97f3\u54cd\u7b49\u6536\u85cf\u8005\u6253\u9020\u7684\u6863\u6848\u7ba1\u7406\u5e94\u7528\u2014\u2014\u4f18\u96c5\u6574\u7406\uff0c\u5b8c\u5168\u5b58\u50a8\u5728\u4f60\u7684 Mac \u4e0a\u3002",
-    "hero.cta":"\u5728 Mac App Store \u4e0b\u8f7d","hero.learn":"\u4e86\u89e3\u66f4\u591a",
+    "hero.badge":"macOS & Windows","hero.title1":"\u6bcf\u4e00\u4ef6\u85cf\u54c1\uff0c","hero.title2":"\u5b8c\u7f8e\u5f52\u6863\u3002",
+    "hero.subtitle":"\u4e13\u4e3a\u9ed1\u80f6\u3001\u76f8\u673a\u3001\u4e66\u7c4d\u3001Hi-Fi \u97f3\u54cd\u7b49\u6536\u85cf\u8005\u6253\u9020\u7684\u6863\u6848\u7ba1\u7406\u5e94\u7528\u2014\u2014\u4f18\u96c5\u6574\u7406\uff0c\u5b8c\u5168\u5b58\u50a8\u5728\u4f60\u7684 Mac \u6216 PC \u4e0a\u3002",
+    "hero.cta":"\u7acb\u5373\u8d2d\u4e70 \u00b7 $29.99","hero.learn":"\u4e86\u89e3\u66f4\u591a",
     "hero.price":"$29.99 \u00b7 \u4e00\u6b21\u6027\u4e70\u65ad \u00b7 \u65e0\u8ba2\u9605",
+    "hero.dl_label":"\u4e0b\u8f7d",
     "features.title":"\u4e3a\u8ba4\u771f\u7684\u6536\u85cf\u8005\u800c\u751f","features.sub":"\u85cf\u54c1\u7684\u6bcf\u4e00\u4e2a\u7ec6\u8282\uff0c\u90fd\u6709\u8ff9\u53ef\u5faa\u3001\u53ef\u968f\u65f6\u68c0\u7d22\u3002",
     "f1.title":"\u4e03\u5927\u4e13\u5c5e\u95e8\u7c7b","f1.body":"\u76f8\u673a\u3001\u97f3\u54cd\u3001\u9ed1\u80f6\u3001CD\u3001\u78c1\u5e26\u3001\u4e66\u7c4d\u548c\u7535\u8111\u2014\u2014\u6bcf\u4e2a\u95e8\u7c7b\u90fd\u6709\u91cf\u8eab\u5b9a\u5236\u7684\u5b57\u6bb5\uff0c\u544a\u522b\u901a\u7528\u7535\u5b50\u8868\u683c\u3002",
     "f2.title":"\u6570\u636e\u7edf\u8ba1\u4ed4\u8868\u76d8","f2.body":"\u85cf\u54c1\u603b\u4f30\u503c\u3001\u95e8\u7c7b\u5206\u5e03\u3001365 \u5929\u5165\u624b\u70ed\u529b\u56fe\u3001\u54c1\u76f8\u5206\u5e03\uff0c\u4ee5\u53ca\u6309\u4f30\u503c\u6392\u5217\u7684 Top 10\u3002",
@@ -283,8 +311,9 @@ const T={
     "cat.r6":"\ud83d\udcda \u4e66\u7c4d","cat.r6f":"\u4f5c\u8005 \u00b7 \u51fa\u7248\u793e \u00b7 ISBN \u00b7 \u88c5\u5e27\u65b9\u5f0f \u00b7 \u9605\u8bfb\u72b6\u6001",
     "cat.r7":"\ud83d\udcbb \u7535\u8111\u4e3b\u673a","cat.r7f":"\u4e3b\u673a\u7c7b\u578b \u00b7 CPU \u00b7 \u5185\u5b58 \u00b7 \u5b58\u50a8 \u00b7 \u663e\u5361",
     "price.title":"\u4e00\u6b21\u4ed8\u8d39\uff0c\u6c38\u4e45\u4f7f\u7528\u3002","price.sub":"\u65e0\u8ba2\u9605\uff0c\u65e0\u7eed\u8d39\u3002\u4e00\u6b21\u4ed8\u6e05\uff0c\u6c38\u4e45\u62e5\u6709\u3002",
-    "price.plan":"\u4e00\u6b21\u6027\u4e70\u65ad","price.period":"macOS \u00b7 \u5305\u542b\u6240\u6709\u672a\u6765\u66f4\u65b0",
-    "price.req":"macOS 12 Monterey \u6216\u66f4\u9ad8\u7248\u672c \u00b7 Apple Silicon & Intel",
+    "price.plan":"一次性买断","price.period":"macOS & Windows · 包含所有未来更新",
+    "price.req":"macOS 12+ · Windows 10+ · Apple Silicon、Intel & x64",
+    "price.cta":"立即购买",
     "promo.title":"\u642d\u914d Fetchera \u5e26\u5230\u73b0\u573a",
     "promo.body":"Collectra \u7684 iOS \u73b0\u573a\u641e\u6863\u3002\u5728\u8df3\u86a4\u5e02\u573a\u626b\u63cf\u6761\u5f62\u7801\uff0c\u67e5\u770b\u5b9e\u65f6\u5e02\u573a\u4ef7\uff0c\u5373\u65f6\u786e\u8ba4\u662f\u5426\u5df2\u62e5\u6709\u2014\u2014\u56de\u5bb6\u540e\u518d\u5f55\u5165 Collectra\u3002",
     "promo.cta":"\u4e86\u89e3 Fetchera \u2192",
